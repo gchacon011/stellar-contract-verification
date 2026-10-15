@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="public/images/csv-logo.webp" alt="CSV Verify logo" width="360" />
+<img src="public/images/csv-logo.webp" alt="STEverify logo" width="360" />
 
-# CSV Verify — Contract Source Verify
+# STEverify — Contract Source Verify
 
 **Source verification for Soroban smart contracts on Stellar.**
-CSV Verify rebuilds a contract from its public source code and proves the on-chain WASM matches — so users can trust what they interact with.
+STEverify rebuilds a contract from its public source code and proves the on-chain WASM matches — so users can trust what they interact with.
 
 [**Live Demo**](https://stellar-contract-verification.vercel.app) · [Verify a Contract](https://stellar-contract-verification.vercel.app/verify) · [Developer Tutorial](https://stellar-contract-verification.vercel.app/for-devs/tutorial)
 
@@ -19,11 +19,11 @@ CSV Verify rebuilds a contract from its public source code and proves the on-cha
 
 ---
 
-## Why CSV Verify?
+## Why STEverify?
 
 On Stellar, anyone can deploy a Soroban contract — but users have no way to know **what code is actually running** behind a contract ID. A wallet, a DEX, or a lending protocol could be running something entirely different from the repository it advertises.
 
-CSV Verify closes that gap using [SEP-58 (Contract Source Verification)](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0058.md): developers embed build metadata into their WASM at compile time, and CSV Verify **independently rebuilds the contract from that exact source** and compares hashes. No trust required — the math either checks out or it doesn't.
+STEverify closes that gap using [SEP-58 (Contract Source Verification)](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0058.md): developers embed build metadata into their WASM at compile time, and STEverify **independently rebuilds the contract from that exact source** and compares hashes. No trust required — the math either checks out or it doesn't.
 
 ## How Verification Works
 
@@ -97,7 +97,7 @@ curl -X POST https://stellar-contract-verification.vercel.app/api/verify \
 ### Setup
 
 ```bash
-git clone https://github.com/sebasberrios-dev/stellar-contract-verification.git
+git clone https://github.com/gchacon011/stellar-contract-verification.git
 cd stellar-contract-verification
 pnpm install
 
@@ -158,7 +158,7 @@ stellar contract deploy \
   --source YOUR_ACCOUNT
 ```
 
-Then verify it at [csv-verify /verify](https://stellar-contract-verification.vercel.app/verify). The full walkthrough — including workspace/monorepo builds, `bldopt` rules, and troubleshooting — lives in [TUTORIAL.md](TUTORIAL.md) and the in-app [tutorial](https://stellar-contract-verification.vercel.app/for-devs/tutorial).
+Then verify it at [STEverify /verify](https://stellar-contract-verification.vercel.app/verify). The full walkthrough — including workspace/monorepo builds, `bldopt` rules, and troubleshooting — lives in [TUTORIAL.md](TUTORIAL.md) and the in-app [tutorial](https://stellar-contract-verification.vercel.app/for-devs/tutorial).
 
 ## Contributing
 
@@ -167,12 +167,12 @@ Work happens on feature branches with pull requests — direct pushes to `main` 
 ## Community
 
 - 𝕏 — [@MetaStellaX](https://x.com/MetaStellaX)
-- Telegram — [CSV Verify community](https://t.me/+LkioKlyV7BhlN2Yx)
+- Telegram — [STEverify community](https://t.me/+LkioKlyV7BhlN2Yx)
 
 ---
 
 <div align="center">
 
-**CSV Verify** — Contract Source Verify · Built for the Stellar ecosystem · Powered by Soroban
+**STEverify** — Contract Source Verify · Built for the Stellar ecosystem · Powered by Soroban
 
 </div>
